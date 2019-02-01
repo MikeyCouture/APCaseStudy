@@ -1,8 +1,8 @@
 // STRATEGY SECTION
 
-.sectionThree{
+.section__three{
     background-color: $softGrey;
-    .strategyWrapper{
+    .section__three--container{
         display: flex;
         flex-direction: row;
         padding-top: 50px;
@@ -10,18 +10,18 @@
     }
 }
 
-.olaImage{
+.section__three--image{
     width: 50%;
     img{
         height: 300px;
     }
 }
 
-.strategyContainer{
+.section__three--strategy{
     width: 50%;
 }
 
-.strategyContent{
+.section__three--content{
 
     h2{
         @include fontSizeText(18);
@@ -35,14 +35,14 @@
 
 // MEDIA BREAKS
 @media only screen and (max-width: 600px){
- .sectionThree{
-        .strategyWrapper{
+ .section__three{
+        .section__three--container{
             flex-direction: column;
             padding-top: 0px;
         };
     };
 
-    .olaImage{
+    .section__three--image{
         width: 100%;
         img{
             display: block;
@@ -50,7 +50,7 @@
         }
     };
 
-    .strategyContainer{
+    .section__three--strategy{
         width: 100%;
         text-align: center;
     };
@@ -59,14 +59,14 @@
 
 @media only screen and (max-width: 480px){
 
-    .sectionThree{
-        .strategyWrapper{
+    .section__three{
+        .section__three--container{
             flex-direction: column;
             padding-top: 0px;
         }
     };
 
-    .olaImage{
+    .section__three--image{
         width: 100%;
         img{
             height: 160px;
@@ -75,12 +75,12 @@
         }
     };
 
-    .strategyContainer{
+    .section__three--strategy{
         width: 100%;
         text-align: center;
     };
 
-    .strategyContent{
+    .section__three--content{
         h2{
             @include fontSizeText(16);
         }

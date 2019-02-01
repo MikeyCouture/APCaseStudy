@@ -1,45 +1,43 @@
 // OVERVIEW SECTION
 
-.sectionTwo{
+.section__two{
     display: flex;
     flex-flow: row;
     align-items: center;
 }
 
-.devImage img{
+.section__two--image img{
     height: 400px;
 }
 
 // OVERVIEW CONTAINER
-
-.overviewContainer{
+.section__two--container{
     width: 70%;
 }
 
-.overviewContent{
+.section__two--content{
     width: 90%;
     text-align: left;
-    
     h2{
         @include fontSizeText(18);
-    }
+    };
     p{
         @include fontSizePar(12);
         text-indent: 5px;
-    }
+    };
     button{
         font-family: "roboto";
-        width: 155px;
+        width: 175px;
         background-color: #f36;
-        border: 2px solid #ffa7bd;
+        border: 3px solid #ffa7bd;
         border-radius: 2rem;
         color: white;
-        padding: 3px 20px;
+        padding: 12px 20px;
         text-transform: uppercase;
         font-size: 10px;
-        line-height: 15px;
-    }
-}
+        line-height: 13px;
+    };
+};
 
 .diagonal{
     border-width: 0 0 90px 100vw;
@@ -50,20 +48,20 @@
     border-left-color: transparent !important;
     border-right-color: transparent !important;
     position: relative;
-}
+};
 
 // MEDIA BREAKS
 @media only screen and (max-width: 600px){
-    .sectionTwo{
+    .section__two{
         flex-flow: column;
         align-items: center;
     };
 
-    .overviewContainer{
+    .section__two--container{
         width: 100%;
     };
 
-    .overviewContent{
+    .section__two--content{
         width: 100%;
         text-align: center;
     };
@@ -71,27 +69,27 @@
 
 
 @media only screen and (max-width: 480px){
-    .sectionTwo{
+    .section__two{
         flex-flow: column;
         align-items: center;
-    }
+    };
 
-    .devImage img{
+    .section__two--image img{
         height: 300px;
-    }
+    };
 
-    .overviewContainer{
+    .section__two--container{
         width: 90%;
-    }
+    };
 
-    .overviewContent{
+    .section__two--content{
         width: 100%;
         text-align: center;
         h2{
             @include fontSizeText(16);
-        }
+        };
         p{
             @include fontSizePar(10);
-        }
-    }
+        };
+    };
 };

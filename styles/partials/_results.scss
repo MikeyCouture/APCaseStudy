@@ -13,7 +13,7 @@
 
 // TOP
 .section__four--contentTop{
-    text-align: center;
+    text-align: left;
     h2{
        @include fontSizeText(18);
     };
@@ -45,16 +45,22 @@
         @include fontSizePar(14);
         margin-left: 10px;
     };
+
+    .stats{
+        color: $accentColor;
+    }
 };
 
 .results__discover{
     @include fontSizePar(12);
-    background-color: $softGrey;
+    background-color: $mainNavy;
+    border-radius: 20px;
 }
 
 .results__discover--container{
     padding: 30px;
     text-indent: 5px;
+    color: white;
     p span{
         font-weight: bold;
     }
@@ -62,6 +68,7 @@
 
 .results__discover--list span{
     @include fontSizePar(12);
+    color: white;
 }
 
 .results__discover--listItem{

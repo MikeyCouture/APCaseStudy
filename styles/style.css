@@ -145,11 +145,18 @@ body {
   max-width: 1600px; }
 
 header {
-  background-color: #34495e;
-  height: 50vh;
-  border-top: 4px solid #ff3366; }
+  height: 100vh;
+  border-top: 4px solid #ff3366;
+  border-bottom: 4px solid #ff3366;
+  background-image: url("../assets/cityskyline2-overlay.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
-.headerLogo {
+.section__one {
+  height: 100%; }
+
+.section__one--logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,12 +168,12 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.headerLogo img {
+.section__one--logo img {
   height: 100px; }
 
-.title {
-  font-size: 20px;
-  font-size: 2rem;
+.section__one--title {
+  font-size: 30px;
+  font-size: 3rem;
   font-family: "Roboto";
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -175,13 +182,14 @@ header {
   width: 60%;
   margin: 0 auto;
   color: white;
-  font-weight: normal;
-  margin-top: 5%; }
+  margin-top: 10%;
+  text-shadow: 3px 3px 1px #34495e;
+  line-height: 65px; }
 
 @media only screen and (max-width: 600px) {
-  .headerLogo img {
+  .section__one--logo img {
     height: 70px; }
-  .title {
+  .section__one--title {
     font-size: 18px;
     font-size: 1.8rem;
     font-family: "Roboto";
@@ -194,9 +202,9 @@ header {
 @media only screen and (max-width: 480px) {
   header {
     height: 40vh; }
-  .headerLogo img {
+  .section__one--logo img {
     height: 50px; }
-  .title {
+  .section__one--title {
     font-size: 12px;
     font-size: 1.2rem;
     font-family: "Roboto";
@@ -211,7 +219,7 @@ header {
     margin-top: 15%;
     text-shadow: 2px 2px 2px #393939; } }
 
-.sectionTwo {
+.section__two {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,16 +231,16 @@ header {
   -ms-flex-align: center;
   align-items: center; }
 
-.devImage img {
+.section__two--image img {
   height: 400px; }
 
-.overviewContainer {
+.section__two--container {
   width: 70%; }
 
-.overviewContent {
+.section__two--content {
   width: 90%;
   text-align: left; }
-  .overviewContent h2 {
+  .section__two--content h2 {
     font-size: 18px;
     font-size: 1.8rem;
     font-family: "Roboto";
@@ -243,7 +251,7 @@ header {
     -webkit-text-decoration-color: #037bc0;
     text-decoration-color: #037bc0;
     text-transform: uppercase; }
-  .overviewContent p {
+  .section__two--content p {
     font-size: 12px;
     font-size: 1.2rem;
     letter-spacing: 1px;
@@ -251,17 +259,17 @@ header {
     color: #3d3d3d;
     line-height: 28px;
     text-indent: 5px; }
-  .overviewContent button {
+  .section__two--content button {
     font-family: "roboto";
-    width: 155px;
+    width: 175px;
     background-color: #f36;
-    border: 2px solid #ffa7bd;
+    border: 3px solid #ffa7bd;
     border-radius: 2rem;
     color: white;
-    padding: 3px 20px;
+    padding: 12px 20px;
     text-transform: uppercase;
     font-size: 10px;
-    line-height: 15px; }
+    line-height: 13px; }
 
 .diagonal {
   border-width: 0 0 90px 100vw;
@@ -274,7 +282,7 @@ header {
   position: relative; }
 
 @media only screen and (max-width: 600px) {
-  .sectionTwo {
+  .section__two {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-flow: column;
@@ -282,14 +290,14 @@ header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  .overviewContainer {
+  .section__two--container {
     width: 100%; }
-  .overviewContent {
+  .section__two--content {
     width: 100%;
     text-align: center; } }
 
 @media only screen and (max-width: 480px) {
-  .sectionTwo {
+  .section__two {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-flow: column;
@@ -297,14 +305,14 @@ header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  .devImage img {
+  .section__two--image img {
     height: 300px; }
-  .overviewContainer {
+  .section__two--container {
     width: 90%; }
-  .overviewContent {
+  .section__two--content {
     width: 100%;
     text-align: center; }
-    .overviewContent h2 {
+    .section__two--content h2 {
       font-size: 16px;
       font-size: 1.6rem;
       font-family: "Roboto";
@@ -315,7 +323,7 @@ header {
       -webkit-text-decoration-color: #037bc0;
       text-decoration-color: #037bc0;
       text-transform: uppercase; }
-    .overviewContent p {
+    .section__two--content p {
       font-size: 10px;
       font-size: 1rem;
       letter-spacing: 1px;
@@ -323,9 +331,9 @@ header {
       color: #3d3d3d;
       line-height: 28px; } }
 
-.sectionThree {
+.section__three {
   background-color: #e8e8e8; }
-  .sectionThree .strategyWrapper {
+  .section__three .section__three--container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -338,15 +346,15 @@ header {
     -ms-flex-align: center;
     align-items: center; }
 
-.olaImage {
+.section__three--image {
   width: 50%; }
-  .olaImage img {
+  .section__three--image img {
     height: 300px; }
 
-.strategyContainer {
+.section__three--strategy {
   width: 50%; }
 
-.strategyContent h2 {
+.section__three--content h2 {
   font-size: 18px;
   font-size: 1.8rem;
   font-family: "Roboto";
@@ -358,7 +366,7 @@ header {
   text-decoration-color: #037bc0;
   text-transform: uppercase; }
 
-.strategyContent p {
+.section__three--content p {
   font-size: 12px;
   font-size: 1.2rem;
   letter-spacing: 1px;
@@ -368,38 +376,38 @@ header {
   text-indent: 5px; }
 
 @media only screen and (max-width: 600px) {
-  .sectionThree .strategyWrapper {
+  .section__three .section__three--container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     padding-top: 0px; }
-  .olaImage {
+  .section__three--image {
     width: 100%; }
-    .olaImage img {
+    .section__three--image img {
       display: block;
       margin: 0 auto; }
-  .strategyContainer {
+  .section__three--strategy {
     width: 100%;
     text-align: center; } }
 
 @media only screen and (max-width: 480px) {
-  .sectionThree .strategyWrapper {
+  .section__three .section__three--container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     padding-top: 0px; }
-  .olaImage {
+  .section__three--image {
     width: 100%; }
-    .olaImage img {
+    .section__three--image img {
       height: 160px;
       display: block;
       margin: 0 auto; }
-  .strategyContainer {
+  .section__three--strategy {
     width: 100%;
     text-align: center; }
-  .strategyContent h2 {
+  .section__three--content h2 {
     font-size: 16px;
     font-size: 1.6rem;
     font-family: "Roboto";
@@ -410,7 +418,7 @@ header {
     -webkit-text-decoration-color: #037bc0;
     text-decoration-color: #037bc0;
     text-transform: uppercase; }
-  .strategyContent p {
+  .section__three--content p {
     font-size: 10px;
     font-size: 1rem;
     letter-spacing: 1px;
@@ -429,7 +437,7 @@ header {
   position: relative; }
 
 .section__four--contentTop {
-  text-align: center; }
+  text-align: left; }
   .section__four--contentTop h2 {
     font-size: 18px;
     font-size: 1.8rem;
@@ -475,6 +483,8 @@ header {
     color: #3d3d3d;
     line-height: 28px;
     margin-left: 10px; }
+  .results__content--stat .stats {
+    color: #ff3366; }
 
 .results__discover {
   font-size: 12px;
@@ -483,11 +493,13 @@ header {
   font-family: "Roboto";
   color: #3d3d3d;
   line-height: 28px;
-  background-color: #e8e8e8; }
+  background-color: #34495e;
+  border-radius: 20px; }
 
 .results__discover--container {
   padding: 30px;
-  text-indent: 5px; }
+  text-indent: 5px;
+  color: white; }
   .results__discover--container p span {
     font-weight: bold; }
 
@@ -497,7 +509,8 @@ header {
   letter-spacing: 1px;
   font-family: "Roboto";
   color: #3d3d3d;
-  line-height: 28px; }
+  line-height: 28px;
+  color: white; }
 
 .results__discover--listItem {
   color: #ff3366; }

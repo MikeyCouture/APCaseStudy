@@ -1,40 +1,49 @@
 // HEADER SECTION
 
 header{
-    background-color: $mainNavy;
-    height: 50vh;
+    // background-color: $mainNavy;
+    height: 100vh;
     border-top: 4px solid $accentColor;
-    // background-image: url("../assets/OlaBackground.jpg");
+    border-bottom: 4px solid $accentColor;
+    background-image: url("../assets/cityskyline2-overlay.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.headerLogo{
+.section__one{
+    height: 100%;
+}
+
+.section__one--logo{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.headerLogo img{
+.section__one--logo img{
     height: 100px;
 }
 
 
-.title{
-    @include fontSize(20);
+.section__one--title{
+    @include fontSize(30);
     text-align: center;
     width: 60%;
     margin: 0 auto;
     color: white;
-    font-weight: normal;
-    margin-top: 5%;
+    margin-top: 10%;
+    text-shadow: 3px 3px 1px $mainNavy;
+    line-height: 65px;
 }
 
 // MEDIA BREAKS
 @media only screen and (max-width: 600px){
-    .headerLogo img{
+    .section__one--logo img{
         height: 70px;
     };
 
-    .title{
+    .section__one--title{
         @include fontSize(18);
         width: 90%;
         margin-top: 15%;
@@ -47,11 +56,11 @@ header{
         height: 40vh;
     };
 
-    .headerLogo img{
+    .section__one--logo img{
         height: 50px;
     };
 
-    .title{
+    .section__one--title{
         @include fontSize(12);
         text-align: center;
         width: 80%;
