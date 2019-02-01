@@ -25,6 +25,7 @@
     }
     p{
         @include fontSizePar(12);
+        text-indent: 5px;
     }
     button{
         font-family: "roboto";
@@ -49,5 +50,48 @@
     border-left-color: transparent !important;
     border-right-color: transparent !important;
     position: relative;
-    z-index: 1;
 }
+
+// MEDIA BREAKS
+@media only screen and (max-width: 600px){
+    .sectionTwo{
+        flex-flow: column;
+        align-items: center;
+    };
+
+    .overviewContainer{
+        width: 100%;
+    };
+
+    .overviewContent{
+        width: 100%;
+        text-align: center;
+    };
+};
+
+
+@media only screen and (max-width: 480px){
+    .sectionTwo{
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .devImage img{
+        height: 300px;
+    }
+
+    .overviewContainer{
+        width: 90%;
+    }
+
+    .overviewContent{
+        width: 100%;
+        text-align: center;
+        h2{
+            @include fontSizeText(16);
+        }
+        p{
+            @include fontSizePar(10);
+        }
+    }
+};

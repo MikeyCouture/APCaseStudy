@@ -1,0 +1,15 @@
+// FOOTER
+
+.footer{
+    background-color: $mainNavy;
+    border-bottom: 4px solid $accentColor;
+}
+
+.footer__section--logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img{
+        height: 40px;
+    };
+};
