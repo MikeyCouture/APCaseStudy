@@ -1,0 +1,32 @@
+// HEADER SECTION
+
+header{
+    background-color: $mainNavy;
+    height: 100%;
+    border-top: 4px solid $accentColor;
+}
+
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.headerLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerLogo img{
+    height: 100px;
+}
+
+.title{
+    @include fontSize(20);
+    margin: 0;
+    text-align: center;
+    width: 60%;
+    margin: 100px auto;
+    color: white;
+
+}
