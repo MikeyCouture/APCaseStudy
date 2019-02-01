@@ -12,6 +12,7 @@ $accentColor: #ff3366;
 $lightBlue: #037bc0;
 $lightGreen: #61b99d; 
 $softGrey: #e8e8e8;
+$darkGrey: #868989;
 
 // TEXT
 $mainFont: 'Roboto';
@@ -26,12 +27,23 @@ $mainFont: 'Roboto';
 }
 
 @mixin fontSizeText($sizeValue){
-    // font-size: $sizeValue * 1px;
-    // font-size: ($sizeValue/10) * 1rem;
-    // font-family: $textfont;
-    // letter-spacing: 1px;
-    // line-height: 28px;
-    // text-shadow: 1px 1px black;
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+    font-family: $mainFont;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: $accentColor;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+@mixin fontSizePar($sizeValue){
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+    letter-spacing: 1px;
+    font-family: $mainFont;
+    color: $darkGrey;
+    line-height: 28px;
 }
 
 html {
@@ -42,17 +54,16 @@ html {
 
 body{
     width: 100%;
-    // border: 4px solid $orange;
 }
 
-// .wrapper {
-//    max-width: 1600px;
-//    width: 90%;
-//    margin: 0 auto;
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
 //    @media screen and (min-width: 700px) {
 //       width: 85%;
 //    }
 //    @media screen and (min-width: 900px) {
 //       width: 70%;
-//    }
-// }

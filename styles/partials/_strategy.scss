@@ -1,0 +1,32 @@
+// STRATEGY SECTION
+
+.sectionThree{
+    background-color: $softGrey;
+    .strategyWrapper{
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+    }
+}
+
+.olaImage{
+    width: 70%;
+    img{
+        height: 400px;
+    }
+}
+
+.strategyContainer{
+    width: 45%;
+}
+
+.strategyContent{
+
+    h2{
+        @include fontSizeText(18);
+    }
+
+    p{
+        @include fontSizePar(12);
+    }
+}

@@ -139,14 +139,15 @@ html {
 body {
   width: 100%; }
 
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1600px; }
+
 header {
   background-color: #34495e;
   height: 100%;
   border-top: 4px solid #ff3366; }
-
-.wrapper {
-  width: 95%;
-  margin: 0 auto; }
 
 .headerLogo {
   display: -webkit-box;
@@ -173,5 +174,105 @@ header {
   margin: 0;
   text-align: center;
   width: 60%;
-  margin: 100px auto;
-  color: white; }
+  margin: 0 auto;
+  color: white;
+  font-weight: normal;
+  margin-top: 100px; }
+
+.sectionTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.devImage img {
+  height: 400px; }
+
+.overviewContainer {
+  width: 70%; }
+
+.overviewContent {
+  width: 90%;
+  text-align: left; }
+  .overviewContent h2 {
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-family: "Roboto";
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: #ff3366;
+    text-decoration: underline;
+    text-transform: uppercase; }
+  .overviewContent p {
+    font-size: 12px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-family: "Roboto";
+    color: #868989;
+    line-height: 28px; }
+  .overviewContent button {
+    font-family: "roboto";
+    width: 155px;
+    background-color: #f36;
+    border: 2px solid #ffa7bd;
+    border-radius: 2rem;
+    color: white;
+    padding: 3px 20px;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 15px; }
+
+.diagonal {
+  border-width: 0 0 90px 100vw;
+  border-bottom-color: #e8e8e8;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  position: relative;
+  z-index: 1; }
+
+.sectionThree {
+  background-color: #e8e8e8; }
+  .sectionThree .strategyWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-top: 50px; }
+
+.olaImage {
+  width: 70%; }
+  .olaImage img {
+    height: 400px; }
+
+.strategyContainer {
+  width: 45%; }
+
+.strategyContent h2 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "Roboto";
+  letter-spacing: 1px;
+  line-height: 28px;
+  color: #ff3366;
+  text-decoration: underline;
+  text-transform: uppercase; }
+
+.strategyContent p {
+  font-size: 12px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-family: "Roboto";
+  color: #868989;
+  line-height: 28px; }
