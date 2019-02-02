@@ -9,11 +9,11 @@
     border-left-color: transparent !important;
     border-right-color: $softGrey;
     position: relative;
-}
+};
 
 // TOP
 .section__four--contentTop{
-    text-align: left;
+    text-align: center;
     h2{
        @include fontSizeText(18);
     };
@@ -31,8 +31,12 @@
 
     .results__content, .results__discover{
         width: 50%;
-    }
-}
+    };
+
+    .results__content{
+        margin-left: 15%;
+    };
+};
 
 .results__content--stat{
     display: flex;
@@ -48,14 +52,14 @@
 
     .stats{
         color: $accentColor;
-    }
+    };
 };
 
 .results__discover{
     @include fontSizePar(12);
     background-color: $mainNavy;
     border-radius: 20px;
-}
+};
 
 .results__discover--container{
     padding: 30px;
@@ -63,14 +67,106 @@
     color: white;
     p span{
         font-weight: bold;
-    }
+    };
+};
+
+ul{
+    padding: 5px;
 }
 
 .results__discover--list span{
     @include fontSizePar(12);
     color: white;
-}
+};
 
 .results__discover--listItem{
     color: $accentColor;
-}
+};
+
+// MEDIA BREAKS
+@media only screen and (max-width: 600px){
+
+    .section__four--contentTop{
+        text-align: center;
+        h2{
+            @include fontSizeText(18);
+        };
+    };
+
+    .section__four--contentBottom{
+        flex-direction: column-reverse;
+        .results__content, .results__discover{
+            width: 100%;
+        };
+
+        .results__content{
+            margin-left: 0;
+        };
+    };
+
+    .results__content--stat{
+        justify-content: center;
+    }
+
+    .results__content--stat p{
+        @include fontSizePar(10);
+        // margin-left: 10px;
+    }
+
+    .results__discover{
+        @include fontSizePar(10);
+        text-align: center;
+    }
+
+    .results__discover--container{
+        padding: 10px;
+    };
+
+    .results__discover--list span{
+        @include fontSizePar(10);
+        color: white;
+    };
+
+};
+
+
+@media only screen and (max-width: 480px){
+
+    .section__four--contentTop{
+        text-align: center;
+        h2{
+            @include fontSizeText(13);
+        };
+    };
+
+    .section__four--contentBottom{
+        flex-direction: column-reverse;
+        .results__content, .results__discover{
+            width: 100%;
+        };
+
+        .results__content{
+            margin-left: 0;
+        };
+    };
+
+    .results__content--stat p{
+        @include fontSizePar(10);
+        // margin-left: 10px;
+    }
+
+    .results__discover{
+        @include fontSizePar(10);
+        text-align: center;
+    }
+
+    .results__discover--container{
+        padding: 10px;
+    };
+
+    .results__discover--list span{
+        @include fontSizePar(10);
+        color: white;
+    };
+
+};

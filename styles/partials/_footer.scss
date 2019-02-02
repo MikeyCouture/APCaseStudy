@@ -9,7 +9,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     img{
-        height: 40px;
+        height: 30px;
     };
+    .blueprint__logo{
+            height: 80px;
+        }
 };

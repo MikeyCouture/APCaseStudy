@@ -8,15 +8,16 @@
 
 .section__two--image img{
     height: 400px;
+    transition: 0.3s;
 }
 
 // OVERVIEW CONTAINER
 .section__two--container{
-    width: 70%;
+    // width: 70%;
 }
 
 .section__two--content{
-    width: 90%;
+    width: 70%;
     text-align: left;
     h2{
         @include fontSizeText(18);
@@ -24,18 +25,25 @@
     p{
         @include fontSizePar(12);
         text-indent: 5px;
+        margin-bottom: 30px;
     };
-    button{
+    .button{
         font-family: "roboto";
         width: 175px;
-        background-color: #f36;
-        border: 3px solid #ffa7bd;
+        background-color: $accentColor;
+        border: 3px solid lighten($accentColor, 15);
         border-radius: 2rem;
         color: white;
         padding: 12px 20px;
         text-transform: uppercase;
         font-size: 10px;
         line-height: 13px;
+        text-decoration: none;
+        transition: 0.3s;
+        &:hover{
+            background-color: $lightGreen;
+            border: 3px solid lighten($lightGreen, 15);
+        };
     };
 };
 
@@ -51,6 +59,20 @@
 };
 
 // MEDIA BREAKS
+@media only screen and (max-width: 1020px){
+    .section__two--content{
+        width: 100%;
+        text-align: center;
+    };
+
+};
+
+@media only screen and (max-width: 768px){
+    .section__two--image img{
+        height: 300px;
+    };
+};
+
 @media only screen and (max-width: 600px){
     .section__two{
         flex-flow: column;
@@ -86,7 +108,7 @@
         width: 100%;
         text-align: center;
         h2{
-            @include fontSizeText(16);
+            @include fontSizeText(13);
         };
         p{
             @include fontSizePar(10);
