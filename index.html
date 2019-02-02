@@ -7,6 +7,7 @@
     <title>Adparlor | Case Study-Ola Cabs</title>
     <link rel="shortcut icon" type="image/png" href="./assets/AP Icon.svg" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -30,7 +31,7 @@
                 <a class="button" href="https://www.olacabs.com" target="_blank">Learn more on Ola Cabs</a>
             </div>
         </div>
-        <div class="container section__two--image">
+        <div class="container section__two--image" data-aos="fade-left" data-aos-duration="1000">
             <img src="./assets/Site_GIFs-08.svg" alt="animated drawing of a person standing by a life size phone tablet">
         </div>
     </section>
@@ -39,7 +40,7 @@
 <!-- STRATEGY SECTION -->
     <section class="section__three">
         <div class="wrapper section__three--container">
-            <div class="container section__three--image">
+            <div class="container section__three--image" data-aos="fade-right" data-aos-duration="1000">
                 <img src="./assets/OlaLapTopandPhone2.png" alt="">
             </div>
             <div class="container section__three--strategy">
@@ -80,15 +81,15 @@
             <div class="results__content">
                 <div class="results__content--stat">
                     <img src="./assets/Mobile.svg" alt="">
-                    <p>Improved Cost Per App Install by <span class="stats">56</span>%</p>
+                    <p>Improved Cost Per App Install by <span class="stats" id="statOne">56</span>%</p>
                 </div>
                 <div class="results__content--stat">
                     <img src="./assets/Data Results.svg" alt="">
-                    <p>Launched App in 4 Cities with +<span class="stats">40</span>k App Installs</p>
+                    <p>Launched App in 4 Cities with +<span class="stats" id="statTwo">40</span>k App Installs</p>
                 </div>
                 <div class="results__content--stat">
                     <img src="./assets/People.svg" alt="">
-                    <p>Reached <span class="stats">500,000</span> Potential App Installers</p>
+                    <p>Reached <span class="stats" id="statThree">500</span><span class="stats">,000</span> Potential App Installers</p>
                 </div>
             </div>
         </div>
@@ -105,6 +106,12 @@
             </div>
         </section>
     </footer>
-    
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
