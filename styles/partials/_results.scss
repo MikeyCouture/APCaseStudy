@@ -3,8 +3,6 @@
 .diagonalTwo{
     border-width: 0 100vw 90px 0;
     border-bottom-color: white;
-    width: 0;
-    height: 0;
     border-style: solid;
     border-left-color: transparent !important;
     border-right-color: $softGrey;
@@ -28,13 +26,15 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 5%;
+    background-color: $mainNavy;
+    border-radius: 20px;
 
     .results__content, .results__discover{
         width: 50%;
     };
 
     .results__content{
-        margin-left: 15%;
+        margin-left: 5%;
     };
 };
 
@@ -42,12 +42,13 @@
     display: flex;
     align-items: center;
     img{
-        height: 40px;
+        height: 45px;
     };
 
     p{
-        @include fontSizePar(14);
-        margin-left: 10px;
+        @include fontSizePar(12);
+        margin-left: 8px;
+        color: white;
     };
 
     .stats{
@@ -57,8 +58,8 @@
 
 .results__discover{
     @include fontSizePar(12);
-    background-color: $mainNavy;
-    border-radius: 20px;
+    // background-color: $mainNavy;
+    // border-radius: 20px;
 };
 
 .results__discover--container{
@@ -84,7 +85,7 @@ ul{
 };
 
 // MEDIA BREAKS
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1020px){
 
     .section__four--contentTop{
         text-align: center;
@@ -96,7 +97,7 @@ ul{
     .section__four--contentBottom{
         flex-direction: column-reverse;
         .results__content, .results__discover{
-            width: 100%;
+            width: 90%;
         };
 
         .results__content{
@@ -110,6 +111,7 @@ ul{
 
     .results__content--stat p{
         @include fontSizePar(10);
+        color: white;
         // margin-left: 10px;
     }
 
@@ -129,44 +131,31 @@ ul{
 
 };
 
+@media only screen and (max-width: 650px){
+    .section__four--contentBottom{
+        .results__content, .results__discover{
+            width: 100%;
+        };
+    };
+
+}
+
 
 @media only screen and (max-width: 480px){
 
     .section__four--contentTop{
-        text-align: center;
         h2{
             @include fontSizeText(13);
         };
     };
 
-    .section__four--contentBottom{
-        flex-direction: column-reverse;
-        .results__content, .results__discover{
-            width: 100%;
-        };
-
-        .results__content{
-            margin-left: 0;
-        };
-    };
+    .results__content--stat{
+        text-align: left;
+    }
 
     .results__content--stat p{
         @include fontSizePar(10);
-        // margin-left: 10px;
-    }
-
-    .results__discover{
-        @include fontSizePar(10);
-        text-align: center;
-    }
-
-    .results__discover--container{
-        padding: 10px;
-    };
-
-    .results__discover--list span{
-        @include fontSizePar(10);
         color: white;
-    };
+    }
 
 };

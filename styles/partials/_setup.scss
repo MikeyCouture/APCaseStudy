@@ -37,6 +37,7 @@ $mainFont: 'Roboto';
     text-decoration: underline;
     text-decoration-color: $lightBlue;
     text-transform: uppercase;
+    text-shadow: 1px 1px 1px $darkGrey;
 }
 
 @mixin fontSizePar($sizeValue){
