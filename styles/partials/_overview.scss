@@ -5,31 +5,32 @@
     flex-flow: row;
     align-items: center;
     margin-top: 30px;
-}
+};
 
 .section__two--image{
-    // transform: translateX(100%) scale(0.90);
-    // opacity: 0;
     transition: 0.5s;
-}
+};
 
 .section__two--image img{
     height: 400px;
     transition: 0.3s;
-}
+};
 
 // OVERVIEW CONTAINER
 .section__two--content{
     width: 70%;
     text-align: left;
+
     h2{
         @include fontSizeText(18);
     };
+
     p{
         @include fontSizePar(12);
         text-indent: 5px;
         margin-bottom: 30px;
     };
+
     .button{
         font-family: "roboto";
         width: 175px;
@@ -43,6 +44,7 @@
         line-height: 13px;
         text-decoration: none;
         transition: 0.3s;
+        display: inline-block;
         &:hover{
             background-color: $lightGreen;
             border: 3px solid lighten($lightGreen, 15);
@@ -54,16 +56,10 @@
     border-width: 0 0 90px 100vw;
     border-bottom-color: $softGrey;
     border-style: solid;
-    border-left-color: transparent !important;
-    border-right-color: transparent !important;
+    border-left-color: transparent;
+    border-right-color: transparent;
     position: relative;
 };
-
-
-// .active{
-//     opacity: 1;
-//     transform: translateX(0%) scale(1);
-// }
 
 // MEDIA BREAKS
 @media only screen and (max-width: 1020px){
@@ -71,7 +67,6 @@
         width: 100%;
         text-align: center;
     };
-
 };
 
 @media only screen and (max-width: 768px){
@@ -91,7 +86,6 @@
     };
 };
 
-
 @media only screen and (max-width: 480px){
     .section__two--container{
         width: 90%;
@@ -104,5 +98,9 @@
         p{
             @include fontSizePar(10);
         };
+    };
+
+    .section__two--image{
+        margin-top: 20px;
     };
 };
