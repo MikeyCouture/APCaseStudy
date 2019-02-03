@@ -6,8 +6,9 @@ header{
     border-top: 4px solid $accentColor;
     border-bottom: 4px solid $accentColor;
     background-image: url("../assets/cityskyline2-overlay.jpg");
+    // background-image: url("../assets/cityskyline.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 
@@ -27,13 +28,16 @@ header{
 
 
 .section__one--title{
-    @include fontSize(30);
+    @include fontSize(38);
     text-align: center;
     width: 90%;
-    margin: 10% auto 25% auto;
+    margin: 5% auto 5% auto;
     color: white;
     text-shadow: 3px 3px 1px $mainNavy;
-    line-height: 65px;
+    line-height: 70px;
+    font-weight: 100;
+    font-style: italic;
+    transition: 0.3s;
 }
 
 // MEDIA BREAKS

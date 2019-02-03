@@ -150,7 +150,7 @@ header {
   border-bottom: 4px solid #ff3366;
   background-image: url("../assets/cityskyline2-overlay.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat; }
 
 .section__one {
@@ -172,18 +172,23 @@ header {
   height: 100px; }
 
 .section__one--title {
-  font-size: 30px;
-  font-size: 3rem;
+  font-size: 38px;
+  font-size: 3.8rem;
   font-family: "Roboto";
   text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 35px;
   text-align: center;
   width: 90%;
-  margin: 10% auto 25% auto;
+  margin: 5% auto 5% auto;
   color: white;
   text-shadow: 3px 3px 1px #34495e;
-  line-height: 65px; }
+  line-height: 70px;
+  font-weight: 100;
+  font-style: italic;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
 
 @media only screen and (max-width: 768px) {
   .section__one--title {
@@ -349,7 +354,7 @@ header {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    padding-top: 50px;
+    padding-top: 30px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
@@ -483,7 +488,7 @@ header {
     text-shadow: 1px 1px 1px #868989; }
 
 .section__four--contentBottom {
-  width: 100%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,13 +499,13 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 5%;
   background-color: #34495e;
-  border-radius: 20px; }
+  border-radius: 20px;
+  margin: 0 auto 5% auto; }
   .section__four--contentBottom .results__content, .section__four--contentBottom .results__discover {
     width: 50%; }
-  .section__four--contentBottom .results__content {
-    margin-left: 5%; }
+  .section__four--contentBottom .stats {
+    color: #ff3366; }
 
 .results__content--stat {
   display: -webkit-box;
@@ -520,8 +525,6 @@ header {
     line-height: 28px;
     margin-left: 8px;
     color: white; }
-  .results__content--stat .stats {
-    color: #ff3366; }
 
 .results__discover {
   font-size: 12px;
@@ -539,7 +542,7 @@ header {
     font-weight: bold; }
 
 ul {
-  padding: 5px; }
+  padding: 10px; }
 
 .results__discover--list span {
   font-size: 12px;
@@ -551,7 +554,12 @@ ul {
   color: white; }
 
 .results__discover--listItem {
-  color: #ff3366; }
+  color: #ff3366;
+  margin: 10px; }
+
+@media only screen and (max-width: 1230px) {
+  .section__four--contentBottom {
+    width: 100%; } }
 
 @media only screen and (max-width: 1020px) {
   .section__four--contentTop {
@@ -638,7 +646,8 @@ ul {
 
 .footer {
   background-color: #34495e;
-  border-bottom: 4px solid #ff3366; }
+  border-bottom: 4px solid #ff3366;
+  border-top: 4px solid #ff3366; }
 
 .footer__section--logo {
   display: -webkit-box;
@@ -658,3 +667,17 @@ ul {
     height: 30px; }
   .footer__section--logo .blueprint__logo {
     height: 80px; }
+
+.footer__section--develop {
+  text-align: center; }
+  .footer__section--develop p {
+    font-size: 8px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-family: "Roboto";
+    color: #3d3d3d;
+    line-height: 28px;
+    color: white;
+    margin: 0;
+    font-weight: 100;
+    font-style: italic; }

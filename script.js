@@ -2,14 +2,67 @@ const olaApp = {};
 
 olaApp.init = function (){
 
-    window.addEventListener("scroll", () => {
-        const scrollable = document.documentElement.offsetHeight - document.documentElement.clientHeight;
-        const scrolled = Math.ceil(window.scrollY);
+    // window.addEventListener("scroll", () => {
+    //     const scrollable = document.documentElement.offsetHeight - document.documentElement.clientHeight;
+    //     const scrolled = Math.ceil(window.scrollY);
 
-        if (scrolled === scrollable){
-            runStats();
-        };
-    });
+    //     if (scrolled === scrollable){
+    //         runStats();
+    //     };
+    // });
+
+    let allStats = document.querySelector(".results__content--stat");
+    
+
+    const isInViewport = function (elem) {
+        let bounding = elem.getBoundingClientRect();
+        return (
+            bounding.top >= 0 &&
+            bounding.left >= 0 &&
+            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    };
+
+    
+    let flag = true;
+    
+    function newFunc(){
+        window.addEventListener("scroll", () => {
+            if(flag){
+                if (isInViewport(allStats)) {
+                    newStat();
+                    flag = false;
+                };
+            };
+        });
+    };
+
+    newFunc();
+
+
+
+
+    // const trigger = (function(){
+    //     let flag = true;
+    //     return function(){
+    //         if(flag === true){
+    //             window.addEventListener("scroll", () => {
+    //                 if (isInViewport(allStats)) {
+    //                     newStat();
+    //                 };
+    //             });
+    //             flag = false;
+    //         };
+    //     };
+    // });
+
+    function newStat(){
+        runStats();
+    };
+
+
+
 
     function runStats(){
     // Grabbing the span inner text and setting new install variables
