@@ -25,11 +25,30 @@
 .section__four--contentBottom{
     width: 80%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     background-color: $mainNavy;
     border-radius: 20px;
     margin: 0 auto;
+
+    .section__four--whatWorks{
+        p{
+            @include fontSizePar(12);
+            color: white;
+            margin: 4% auto;
+            text-align: center;
+            width: 80%;
+            span{
+                color: $accentColor;
+            }
+        };
+    };
+
+    .section__four--mainResults{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    };
 
     .results__content, .results__discover{
         width: 50%;
@@ -98,13 +117,12 @@ ul{
     };
 
     .section__four--contentBottom{
-        flex-direction: column-reverse;
         .results__content, .results__discover{
             width: 90%;
         };
 
-        .results__content{
-            margin-left: 0;
+        .section__four--mainResults{
+            flex-direction: column-reverse;
         };
     };
 
@@ -136,6 +154,12 @@ ul{
     .section__four--contentBottom{
         .results__content, .results__discover{
             width: 100%;
+        };
+
+        .section__four--whatWorks{
+            p{
+                width: 90%;
+            };
         };
     };
 };

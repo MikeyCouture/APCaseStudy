@@ -476,16 +476,40 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   background-color: #34495e;
   border-radius: 20px;
   margin: 0 auto; }
+  .section__four--contentBottom .section__four--whatWorks p {
+    font-size: 12px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+    color: #3d3d3d;
+    line-height: 28px;
+    color: white;
+    margin: 4% auto;
+    text-align: center;
+    width: 80%; }
+    .section__four--contentBottom .section__four--whatWorks p span {
+      color: #ff3366; }
+  .section__four--contentBottom .section__four--mainResults {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .section__four--contentBottom .results__content, .section__four--contentBottom .results__discover {
     width: 50%; }
   .section__four--contentBottom .stats {
@@ -558,15 +582,13 @@ ul {
       -webkit-text-decoration-color: #037bc0;
       text-decoration-color: #037bc0;
       text-transform: uppercase; }
-  .section__four--contentBottom {
+  .section__four--contentBottom .results__content, .section__four--contentBottom .results__discover {
+    width: 90%; }
+  .section__four--contentBottom .section__four--mainResults {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse; }
-    .section__four--contentBottom .results__content, .section__four--contentBottom .results__discover {
-      width: 90%; }
-    .section__four--contentBottom .results__content {
-      margin-left: 0; }
   .results__content--stat {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -600,7 +622,9 @@ ul {
 
 @media only screen and (max-width: 650px) {
   .section__four--contentBottom .results__content, .section__four--contentBottom .results__discover {
-    width: 100%; } }
+    width: 100%; }
+  .section__four--contentBottom .section__four--whatWorks p {
+    width: 90%; } }
 
 @media only screen and (max-width: 480px) {
   .section__four--contentTop h2 {
