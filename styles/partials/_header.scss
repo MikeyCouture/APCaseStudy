@@ -4,9 +4,9 @@ header{
     height: auto;
     border-top: 4px solid $accentColor;
     border-bottom: 4px solid $accentColor;
-    background-image: url("../assets/cityskyline2-overlay.jpg");
+    background-image: url("../assets/newbackground3.jpg");
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
 };
 
@@ -26,22 +26,20 @@ header{
 };
 
 .section__one--title{
-    @include fontSize(38);
+    @include fontSize(48);
     text-align: center;
-    width: 90%;
-    margin: 5% auto 5% auto;
+    max-width: 1130px;
+    margin: 11% auto 18% auto;
     color: white;
-    text-shadow: 3px 3px 1px $mainNavy;
-    line-height: 70px;
     font-weight: 100;
     font-style: italic;
-    transition: 0.3s;
+    transition: 0.5s;
 };
 
 // MEDIA BREAKS
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 992px){
     .section__one--title{
-        width: 100%;
+        @include fontSize(30);
     };
 };
 
@@ -51,7 +49,7 @@ header{
     };
 
     .section__one--title{
-        @include fontSize(18);
+        @include fontSize(25);
         width: 90%;
         margin: 10% auto 20% auto;
     };
@@ -60,7 +58,7 @@ header{
 
 @media only screen and (max-width: 480px){
     header{
-        height: 40vh;
+        // height: 40vh;
     };
 
     .section__one--logo img{
@@ -68,10 +66,10 @@ header{
     };
 
     .section__one--title{
-        @include fontSize(15);
+        @include fontSize(20);
         text-align: center;
         width: 100%;
-        margin: 10% auto 25% auto;
+        margin: 14% auto 20% auto;
         color: white;
         text-shadow: 2px 2px 2px #393939;
     };

@@ -18,14 +18,3 @@
             height: 80px;
     };
 };
-
-.footer__section--develop{
-    text-align: center;
-    p{
-        @include fontSizePar(8);
-        color: white;
-        margin: 0;
-        font-weight: 100;
-        font-style: italic;
-    };
-};

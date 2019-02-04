@@ -16,7 +16,7 @@ $darkGrey: #868989;
 $hardGrey: #3d3d3d;
 
 // TEXT
-$mainFont: 'Roboto';
+$mainFont: 'Roboto', sans-serif;
 
 @mixin fontSize($sizeValue){
     font-size: $sizeValue * 1px;
@@ -24,7 +24,7 @@ $mainFont: 'Roboto';
     font-family: $mainFont;
     text-transform: uppercase;
     letter-spacing: 1px;
-    line-height: 35px;
+    line-height: 1.1;
 }
 
 @mixin fontSizeText($sizeValue){
@@ -34,10 +34,8 @@ $mainFont: 'Roboto';
     letter-spacing: 1px;
     line-height: 28px;
     color: $accentColor;
-    text-decoration: underline;
     text-decoration-color: $lightBlue;
     text-transform: uppercase;
-    text-shadow: 1px 1px 1px $darkGrey;
 }
 
 @mixin fontSizePar($sizeValue){
@@ -62,5 +60,5 @@ body{
 .wrapper{
     width: 95%;
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 1200px;
 }

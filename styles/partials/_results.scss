@@ -9,6 +9,10 @@
     position: relative;
 };
 
+.section__four{
+    padding: 50px 0;
+};
+
 // RESULTS - TOP SECTION 
 .section__four--contentTop{
     text-align: center;
@@ -16,7 +20,6 @@
        @include fontSizeText(18);
     };
 };
-
 
 // RESULTS - BOTTOM SECTION
 .section__four--contentBottom{
@@ -26,7 +29,7 @@
     align-items: center;
     background-color: $mainNavy;
     border-radius: 20px;
-    margin: 0 auto 5% auto;
+    margin: 0 auto;
 
     .results__content, .results__discover{
         width: 50%;
